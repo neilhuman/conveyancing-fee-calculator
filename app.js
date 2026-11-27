@@ -29,3 +29,7 @@ function update() {
 
 propertyInput.addEventListener("input", update);
 bondInput.addEventListener("input", update);
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js");
+}
