@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conveyancing Fee Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Transfer &amp; Bond Fees</h1>
+
+    <label for="propertyValue">Property value (R)</label>
+    <input id="propertyValue" type="text" inputmode="numeric" placeholder="e.g. 1 500 000" />
+
+    <label for="bondValue">Bond amount (R) <span class="optional">optional</span></label>
+    <input id="bondValue" type="text" inputmode="numeric" placeholder="e.g. 1 200 000" />
+
+    <section id="results">
+      <div class="result">
+        <span>Transfer fee</span>
+        <strong id="transferFee">–</strong>
+      </div>
+      <div class="result">
+        <span>Bond registration fee</span>
+        <strong id="bondFee">–</strong>
+      </div>
+    </section>
+
+    <p class="disclaimer">
+      Guideline estimate only. Excludes VAT, transfer duty and disbursements.
+    </p>
+  </main>
+
+  <script src="fees.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
